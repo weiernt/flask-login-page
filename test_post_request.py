@@ -4,7 +4,7 @@
 
 if __name__=="__main__":
 	import requests
-	data_load = {"username": "Dale"}
+	data_load = {"username": "Dale", "password": "super-secret-password"}
 	r = requests.post(r"http://localhost:5000/requests_page", json=data_load)
 	
 	print(r.text)
